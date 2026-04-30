@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Plushie Paradise for orders and inquiries. We are based in Sligo.">
+    <title>Plushie Paradise | Contact Us</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        .contact-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-top: 30px;
+            align-items: flex-start;
+        }
+        .contact-section {
+            flex: 1;
+            min-width: 320px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="text"], 
+        input[type="email"], 
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box; 
+        }
+        .radio-group {
+            margin: 15px 0;
+            padding: 10px;
+            background: #fff0f5;
+            border-radius: 5px;
+        }
+        .radio-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+            font-weight: normal;
+        }
+        .radio-item input {
+            margin-right: 10px;
+        }
+        iframe {
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <header>
+        <div class="container head-container">
+            <div id="top" class="logo">
+                <a href="index.html" id="main-logo"><strong>🧸 Plushie Paradise</strong></a>
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 class="section-title" style="text-align: center;">Get in Touch</h1>
+        
+        <div class="contact-grid">
+            <section class="contact-section">
+                <h2>Send Us a Message</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Name <span class="mandatory">*</span></label>
+                        <input type="text" id="name" name="name" required placeholder="name" >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email <span class="mandatory">*</span></label>
+                        <input type="email" id="email" name="email" required placeholder="email">
+                    </div>
+
+                    <div class="radio-group">
+                        <p style="margin-top: 0; font-weight: bold;">Inquiry Type:</p>
+                        <label class="radio-item">
+                            <input type="radio" name="inquiry" value="Order" checked> Order Inquiry
+                        </label>
+                        <label class="radio-item">
+                            <input type="radio" name="inquiry" value="General"> General Question
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message <span class="mandatory">*</span></label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Message"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-main" style="cursor: pointer; border: none;">Submit Message</button>
+                </form>
+            </section>
+
+            <section class="contact-section">
+                <h2>Our Location</h2>
+                <p>We are located in the heart of Sligo. Stop by to say hello!</p>
+                <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9426.166666!2d-8.476!3d54…1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485ee8499292!2sSligo!5e0!3m2!1sen!2sie!4v123456789" 
+                height="450" 
+                style="border:0; width: 100%;" 
+                allowfullscreen="">
+                </iframe>
+
+                <div style="margin-top: 20px;">
+                <p><strong>Address:</strong> O'Connell Street, Sligo, Ireland</p>
+                <p><strong>Phone:</strong> +353 71 911 2345</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+    <div class="container">
+        <div class="footer-copyright">
+            <p>&copy; 2026 Plushie Paradise. All rights reserved.</p>
+        </div>
+        <nav class="footer-nav">
+            <a href="index.html">Home</a> | 
+            <a href="shop.html">Shop</a> | 
+            <a href="about.html">About Us</a> |
+            <a href="https://www.sligo.ie" target="_blank">Visit Sligo</a>
+        </nav>
+    </div>
+</footer>
+</body>
+</html>
